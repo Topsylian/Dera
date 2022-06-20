@@ -375,7 +375,6 @@ div.topnav > a.logo:hover {
 .item {
 	text-align: center;
 	font-size: 20px;
-	font-weight: 700;
 }
 
 .img-box {
@@ -385,6 +384,19 @@ div.topnav > a.logo:hover {
 .img-box img {
 	width: 100%;
 	height: auto;
+}
+
+.item {
+  background-color: var(--black);
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+  margin-bottom: 25px;
+}
+
+div.con-box {
+  text-align: center;
+  padding: 10px 20px;
+	font-family: sans-serif;
+	color: var(--white);
 }
 
 .border-con {
