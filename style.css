@@ -314,10 +314,10 @@ div.topnav > a.logo:hover {
 
 .sub_btn2:hover:before {
 	width: 100%;
-	border-radius: 15px 0px;
+	border-radius: 20px 0px;
 	height: 100%;
 	color: var(--white);
-	background-color: var(--grey);
+	background-color: #000000a3;
 }
 
 .home_btn .sub_btn1:before {
@@ -337,7 +337,7 @@ div.topnav > a.logo:hover {
 .sub_btn1:hover:before {
 	width: 100%;
 	border-radius: 20px 0px;
-	color: var(--black);
+	background-color: #000000a3;
 }
 
 .btn-img {
@@ -350,4 +350,85 @@ div.topnav > a.logo:hover {
 	transform: rotate(155deg);
 	top: 150px;
 	left: 45%;
+}
+
+.services {
+	padding: 2.5em 1.5em;
+	margin-bottom: 50px;
+	background-color: var(--white);
+}
+
+.services-head {
+	text-align: center;
+}
+
+.services-head h2 {
+	font-family: 'Ame';
+	margin-bottom: 15px;
+}
+
+.services-head p {
+	margin-bottom: 50px;
+	color: var(--dark);
+}
+
+.item {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.img-box {
+	width: 100%;
+}
+
+.img-box img {
+	width: 100%;
+	height: auto;
+}
+
+.border-con {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+@keyframes border {
+  0% {
+    transition: 0.85s ease-in-out;
+    background-color: var(--white);
+  }
+
+  20% {
+    transition: 0.85s ease-in-out;
+    background-color: var(--white);
+  }
+
+  40% {
+    transition: 0.85s ease-in-out;
+    background-color: var(--orange);
+  }
+
+  60% {
+    transition: 0.85s ease-in-out;
+    background-color: var(--orange);
+  }
+
+  80% {
+    transition: 0.85s ease-in-out;
+    background-color: var(--white);
+  }
+
+  100% {
+    transition: 0.85s ease-in-out;
+		background-color: var(--white);
+		width: 200px;
+  }
+}
+
+.border {
+	background-color: var(--white);
+	animation: border 2s linear 5s infinite alternate-reverse both;
+	height: 2px;
+	width: 100px;
 }
