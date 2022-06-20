@@ -79,15 +79,21 @@ body {
 }
 
 .nav-container {
-	background-color: var(--container);
-	border-bottom-left-radius: 0%;
-	border-bottom-right-radius: 60%;
+	background: var(--container);
+	background-image: url(Jaccuzi.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-origin: content-box;
 }
 
 .topnav {
   overflow: hidden;
   position: relative;
-	padding: 0em 0.5em;
+	padding: 0em 0em;
+	background: #000000a3;
+	border-bottom: 2px solid #fff;
+	color: var(--white);
 	/**
 	animation: .85s ease-out 1s 1 slideInFromLeft;
 	**/
@@ -96,9 +102,10 @@ body {
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
   display: none;
-	background-color: #fff;
-	border-radius: 5px;
-	border-left: 55px solid var(--orange);
+	background-color: #000000a3;
+	color: var(--white);
+	padding: 10px;
+	border-left: 5px solid var(--orange);
 }
 
 /* Style navigation menu links */
@@ -115,15 +122,15 @@ body {
 
 /* Style the hamburger menu */
 div.topnav a.icon {
-	color: var(--black);
+	color: var(--white);
   display: block;
   position: absolute;
   right: 0;
   top: 0;
 }
 div.topnav #myLinks a {
-	color: var(--black);
-	background-color: var(--white);
+	color: var(--white);
+	background-color: transparent;
 	text-shadow: 0px 1px var(--white);
 }
 
@@ -140,7 +147,7 @@ div.topnav > #myLinks a:active{
 
 /* Style the active link (or home/logo) */
 div.topnav > a.logo {
-  color: var(--black);
+  color: var(--white);
 }
 
 div.topnav > a.logo:hover {
@@ -190,10 +197,14 @@ div.topnav > a.logo:hover {
 
 .homePage {
 	height: 600px;
-	color: var(--black);
+	color: var(--white);
 	padding: 0em 0.5em;
 	overflow: hidden;
 	transition: .85s ease-in-out;
+	background-color: #000000a3;
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
+	border-bottom-right-radius: 60%;
 }
 
 .home_head {
@@ -204,22 +215,15 @@ div.topnav > a.logo:hover {
 	position: relative;
 }
 
-.home_head-bck {
-	width: 100%;
-	height: 420px;
-	border-radius: 69% 31% 30% 67%/ 73% 47% 40% 26%;
-	background-color: var(--white);
-	position: relative;
-}
-
 .home_head h1{
 	width: 100%;
 	text-align: center;
+	font-family: 'Ame';
 }
 
 .heading_con .home_info {
 	font-size: 18px;
-	color: var(--grey);
+	color: var(--white);
 	line-height: 30px;
 	font-weight: 600;
 	font-family: var(--font);
@@ -230,7 +234,7 @@ div.topnav > a.logo:hover {
 }
 
 .yellow {
-	color: var(--white);
+	color: var(--orange);
 }
 
 .home_btn {
@@ -245,10 +249,10 @@ div.topnav > a.logo:hover {
 
 .sub_btn1 {
 	padding: 16px 36px;
-	background-color: var(--white);
+	background-color: transparent;
 	border: 1px solid var(--white);
 	transition: .85s ease-in-out;
-	color: var(--black);
+	color: var(--white);
 	border-radius: 5px;
 	font-size: 16px;
 	display: flex;
@@ -263,7 +267,7 @@ div.topnav > a.logo:hover {
 
 .sub_btn2 {
 	padding: 16px 36px;
-	background-color: var(--orange);
+	background-color: transparent;
 	transition: .85s ease-in-out;
 	color: var(--white);
 	border: 1px solid var(--white);
@@ -280,18 +284,17 @@ div.topnav > a.logo:hover {
 
 .sub_btn2 p, .sub_btn1 p {
 	z-index: 200;
-	color: var(--black);
+	color: var(--white);
 }
 
-.sub_btn2 span, .sub_btn2 span {
-	z-index: 200;
-	color: var(--black);
+.sub_btn2 span, .sub_btn1 span {
+	z-index: 100;
+	color: var(--orange);
 }
 
 .sub_btn2:hover, .sub_btn1:hover {
 	border-radius: 20px 0px;
 	color: var(--black);
-	border: 1px solid var(--orange);
 }
 
 .home_btn .sub_btn2:before {
@@ -299,7 +302,7 @@ div.topnav > a.logo:hover {
   content: '';
 	display: flex;
 	border-radius: 5px;
-  background: var(--orange);
+  background: var(--grey);
 	color: var(--body);
   width: 0%;
   height: 100%;
@@ -314,7 +317,7 @@ div.topnav > a.logo:hover {
 	border-radius: 15px 0px;
 	height: 100%;
 	color: var(--white);
-	background-color: var(--white);
+	background-color: var(--grey);
 }
 
 .home_btn .sub_btn1:before {
@@ -322,7 +325,7 @@ div.topnav > a.logo:hover {
   content: '';
 	display: flex;
 	border-radius: 5px;
-  background: var(--orange);
+  background: var(--grey);
 	color: var(--black);
   width: 0%;
   height: 100%;
