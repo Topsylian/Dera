@@ -53,7 +53,7 @@ body {
 	--black: black;
 	--white: whitesmoke;
 	--orange: #ff6200;
-	--pink: #f98c9e;
+	--purple: #8d048d;
 	--container: #f8974d9b;
 	--font: 'Geo';
 }
@@ -105,7 +105,7 @@ body {
 	background-color: #000000a3;
 	color: var(--white);
 	padding: 10px;
-	border-left: 5px solid var(--orange);
+	border-left: 5px solid var(--purple);
 }
 
 /* Style navigation menu links */
@@ -137,7 +137,7 @@ div.topnav #myLinks a {
 /* Add a grey color on mouse-over */
 div.topnav #myLinks a:hover {
 	color: var(--white);
-	background-color: var(--orange);
+	background-color: var(--purple);
 	text-shadow: 0px 1px var(--black);
 }
 
@@ -148,10 +148,6 @@ div.topnav > #myLinks a:active{
 /* Style the active link (or home/logo) */
 div.topnav > a.logo {
   color: var(--white);
-}
-
-div.topnav > a.logo:hover {
-  color: var(--black);
 }
 
 
@@ -213,10 +209,13 @@ div.topnav > a.logo:hover {
 	margin-bottom: 3em;
 	animation: myAnimation 3s ease-in 1s infinite alternate;
 	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
 }
 
 .home_head h1{
-	width: 100%;
+	max-width: 88%;
 	text-align: center;
 	font-family: 'Ame';
 }
@@ -230,11 +229,18 @@ div.topnav > a.logo:hover {
 	margin-top: 2em;
 	margin-bottom: 3em;
 	animation: myAnimation 3s ease-in 1.2s infinite alternate;
+	display: flex;
+	justify-content: center;
 	text-align: center;
+	width: 100%;
+}
+
+.home_info p {
+	max-width: 88%;
 }
 
 .yellow {
-	color: var(--orange);
+	color: var(--purple);
 }
 
 .home_btn {
@@ -289,7 +295,7 @@ div.topnav > a.logo:hover {
 
 .sub_btn2 span, .sub_btn1 span {
 	z-index: 100;
-	color: var(--orange);
+	color: var(--purple);
 }
 
 .sub_btn2:hover, .sub_btn1:hover {
@@ -303,7 +309,7 @@ div.topnav > a.logo:hover {
 	display: flex;
 	border-radius: 5px;
   background: var(--grey);
-	color: var(--body);
+	color: var(--white);
   width: 0%;
   height: 100%;
   left: 0px;
@@ -347,13 +353,13 @@ div.topnav > a.logo:hover {
 .btn-img img {
 	width: 10%;
 	position: absolute;
-	transform: rotate(155deg);
+	transform: rotate(6deg);
 	top: 150px;
 	left: 45%;
 }
 
 .services {
-	padding: 2.5em 1.5em;
+	padding: 2.5em 2.5em;
 	margin-bottom: 50px;
 	background-color: var(--white);
 }
@@ -414,7 +420,7 @@ div.con-box {
 }
 
 .middle .text a {
-	background-color: var(--orange);
+	background-color: var(--purple);
   color: white;
   font-size: 16px;
   padding: 16px 32px;
@@ -449,12 +455,12 @@ div.con-box {
 
   40% {
     transition: 0.85s ease-in-out;
-    background-color: var(--orange);
+    background-color: var(--purple);
   }
 
   60% {
     transition: 0.85s ease-in-out;
-    background-color: var(--orange);
+    background-color: var(--purple);
   }
 
   80% {
@@ -474,4 +480,37 @@ div.con-box {
 	animation: border 2s linear 5s infinite alternate-reverse both;
 	height: 2px;
 	width: 100px;
+}
+
+.media {
+	position: fixed;
+	top: 200px;
+	right: 10px;
+	z-index: 1;
+}
+
+.cen {
+	padding-top: 2px;
+	padding-left: 7px;
+	padding-bottom: 2px;
+}
+
+.media p {
+	writing-mode: vertical-lr;
+	color: var(--purple)
+}
+
+.list-media div{
+	width: 15px;
+	height: 50px;
+}
+
+div.list-media > div > a {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+div.list-media > div > a > img{
+	width: 100%;
 }
