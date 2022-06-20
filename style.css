@@ -235,7 +235,7 @@ div.topnav > a.logo {
 	width: 100%;
 }
 
-.home_info p {
+.home_info > p {
 	max-width: 88%;
 }
 
@@ -250,6 +250,7 @@ div.topnav > a.logo {
 	gap: 15px;
 	justify-content: space-between;
 	align-items: center;
+	width: 100%;
 	position: relative;
 }
 
