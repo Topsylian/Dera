@@ -16,6 +16,7 @@ body {
 	overflow-x: hidden;
 	font-size: 16px;
 	font-family: var(--font);
+	background-color: var(--white);
 }
 
 @font-face {
@@ -79,12 +80,13 @@ body {
 }
 
 .nav-container {
-	background: var(--container);
+	background: var(--white);
 	background-image: url(Jaccuzi.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-origin: content-box;
+	z-index: -1;
 }
 
 .topnav {
@@ -391,6 +393,7 @@ div.topnav > a.logo {
 
 .img-box {
 	width: 100%;
+	position: relative;
 }
 
 .img-box img {
@@ -409,6 +412,11 @@ div.con-box {
 	font-family: sans-serif;
 	color: var(--white);
 	transition: .5s ease;
+}
+
+.con-box a {
+	text-decoration: none;
+	color: var(--white);
 }
 
 .middle {
@@ -483,6 +491,40 @@ div.con-box {
 	width: 100px;
 }
 
+.img-ani {
+	width: 30px;
+}
+
+.img-anime img{
+	width: 100%;
+}
+
+.img-ani img {
+	width: 100%;
+}
+
+.img-ani3 {
+	position: absolute;
+	bottom: -500px;
+	left: 20px;
+}
+
+.img-ani1 {
+	position: absolute;
+	bottom: -100px;
+	left: 10px;
+	rotate: 30deg;
+	z-index: 0;
+}
+
+.img-ani4 {
+	position: absolute;
+	bottom: -100px;
+	right: 10px;
+	transform: rotate(30deg);
+	z-index: 0;
+}
+
 .media {
 	position: fixed;
 	top: 200px;
@@ -498,7 +540,7 @@ div.con-box {
 
 .media p {
 	writing-mode: vertical-lr;
-	color: var(--purple)
+	color: var(--purple);
 }
 
 .list-media div{
