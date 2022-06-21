@@ -510,7 +510,7 @@ div.con-box {
 .img-ani1 {
 	position: absolute;
 	bottom: -100px;
-	left: 10px;
+	left: 3%;
 	rotate: 30deg;
 	z-index: 0;
 }
@@ -518,7 +518,7 @@ div.con-box {
 .img-ani4 {
 	position: absolute;
 	bottom: -100px;
-	right: 10px;
+	right: 3%;
 	transform: rotate(30deg);
 	z-index: 0;
 }
