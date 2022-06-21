@@ -258,11 +258,10 @@ div.topnav > a.logo {
 
 .sub_btn1 {
 	padding: 16px 36px;
-	background-color: transparent;
-	border: 1px solid var(--white);
+	background-color: var(--purple);
 	transition: .85s ease-in-out;
 	color: var(--white);
-	border-radius: 5px;
+	border-radius: 25px;
 	font-size: 16px;
 	display: flex;
 	justify-content: center;
@@ -276,11 +275,10 @@ div.topnav > a.logo {
 
 .sub_btn2 {
 	padding: 16px 36px;
-	background-color: transparent;
+	background-color: var(--purple);
 	transition: .85s ease-in-out;
 	color: var(--white);
-	border: 1px solid var(--white);
-	border-radius: 5px;
+	border-radius: 25px;
 	font-size: 16px;
 	display: flex;
 	gap: 5px;
@@ -298,7 +296,7 @@ div.topnav > a.logo {
 
 .sub_btn2 span, .sub_btn1 span {
 	z-index: 100;
-	color: var(--purple);
+	color: var(--white);
 }
 
 .sub_btn2:hover, .sub_btn1:hover {
